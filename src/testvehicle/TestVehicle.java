@@ -23,7 +23,7 @@ public class TestVehicle {
         Vehicle[] veh = new Vehicle[6];
         System.out.println("There 6 vehicles are moving down the road");
         for (int i = 0; i < 6; i++) {
-            int rnd = r.nextInt(7);
+            int rnd = r.nextInt(7);//gets a random colour for the vehicle
             switch (rnd) {
                 case (0):
                     colour = "blue";
@@ -47,7 +47,7 @@ public class TestVehicle {
                     colour = "black";
             }
             rnd = r.nextInt(3);
-            switch (rnd) {
+            switch (rnd) {//sets the vehicle to a specific one
                 case (0):
                     veh[i] = new Car(colour, r.nextInt(70) + 150,r.nextInt(7));
                     break;

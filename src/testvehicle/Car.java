@@ -18,6 +18,10 @@ public class Car extends Vehicle {
         this.numStripes = numStripes;
     }
 
+    /**
+     * gets the number of stripes on the car
+     * @return the number of stripes
+     */
     public int getNumStripes() {
         return numStripes;
     }

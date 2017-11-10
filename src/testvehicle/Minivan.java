@@ -18,6 +18,10 @@ public class Minivan extends Vehicle {
         this.numSeats = numSeats;
     }
 
+    /**
+     *gets the number of seats in the minivan
+     * @return returns the number of seats
+     */
     public int getNumSeats() {
         return numSeats;
     }

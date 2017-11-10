@@ -21,21 +21,35 @@ abstract public class Vehicle {
 
     abstract String getType();
 
+    abstract int getNumWheels();
+
+    abstract String getFeature();
+
+    /**
+     * gets the vehicles colour
+     *
+     * @return the colour
+     */
     public String getColor() {
         return col;
     }
 
+    /**
+     * gets the vehicles maximum speed
+     *
+     * @return the maximum speed
+     */
     public double getMaxSpeed() {
         return speed;
     }
 
+    /**
+     * gets the vehicles acceleration
+     * @return the acceleration
+     */
     public double getAcceleration() {
         return Math.round(speed / 36);
     }
-
-    abstract int getNumWheels();
-
-    abstract String getFeature();
 
     public String toString() {
         return "A " + getColor() + " " + getType() + getFeature() + getNumWheels() + " wheels can accelerate it at " + getAcceleration() + " m/s and has a max speed of " + getMaxSpeed() + " km/h.";

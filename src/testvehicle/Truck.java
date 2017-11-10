@@ -18,6 +18,10 @@ public class Truck extends Vehicle {
         this.bed = bed;
     }
 
+    /**
+     * gets whether the truck has a bed
+     * @return that boolean
+     */
     public boolean hasBed() {
         return bed;
     }
